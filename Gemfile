@@ -37,6 +37,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'simplecov', require: false, group: :test
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
