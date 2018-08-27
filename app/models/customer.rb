@@ -4,8 +4,9 @@
 #phone     :string
 #address   :string
 #description :string
-
 class Customer < ApplicationRecord
+  belongs_to :user, :optional => true
+  
   validates :first_name, :presence => true
   validates :last_name, :presence => true
   validates :email, :presence => true

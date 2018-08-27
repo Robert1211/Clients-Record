@@ -1,0 +1,4 @@
+<h1 class="robi">All Users: <%= number_to_human User.count %></h1>
+<% @users.each do |user| %>
+<p class="robi"><%= user.email %></p>
+<% end %>

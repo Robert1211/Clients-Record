@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root :to => 'pages#home'
+    resources :users, :only => [:new, :create, :index]
+    resources :customers
+    resources :name, :only => [:new, :create]
+  get '/login/' => 'session#new' # for login form
+  post '/login' => 'session#create' # for a login
+  delete '/login' => 'session#destroy' #  log out
 end
