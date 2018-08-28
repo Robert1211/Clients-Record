@@ -21,7 +21,7 @@ class CustomersController < ApplicationController
     customer.description = params[:customer][:description]
     customer.save
     @current_user.customers << customer
-    redirect_to root_path
+    redirect_to new_customer_path
   end
 
   def update
