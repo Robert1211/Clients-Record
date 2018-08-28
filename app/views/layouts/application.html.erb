@@ -13,14 +13,14 @@
     <nav class="nav">
       <%= link_to 'Home', root_path %>
       <% if @current_user.present? %>
-      <%= link_to 'New Customers', new_customer_path %>
+      <%= link_to "Current Customers", customers_path %>
+      <%= link_to 'Create new customer', new_customer_path %>
       <%= link_to 'Email addresses', users_path if @current_user.admin? %>
       <%= link_to "Sign out #{ @current_user.email }", login_path, :method => 'delete' %>
       <% else %>
       <%= link_to 'Sign up', new_user_path %>
       <%= link_to 'Sign in', login_path %>
       <% end %>
-
     </nav>
 
     <%= yield %>

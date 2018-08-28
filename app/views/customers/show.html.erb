@@ -1,0 +1,15 @@
+
+<div class="col-md-6 offset-md-4" id="pro">
+
+      <h1><%= @customer.first_name %>
+      <%= @customer.last_name %>
+       </h1>
+
+  <h2>Emaile:    <%= @customer.email %></h2>
+  <h2>Phone:     <%= @customer.phone %></h2>
+  <h2>Address:    <%= @customer.address %></h2>
+  <h2>Decsription: <%= @customer.description %></h2>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %>
+<%= link_to 'Delete', customer_path(@customer), :method => 'delete', :data => { :confirm => 'Are you sure ?'} %>
+</div>

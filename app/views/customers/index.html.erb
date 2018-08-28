@@ -1,9 +1,18 @@
 <div class="col-md-6 offset-md-4" id="pro">
-   <% @current_user.customers.each do |customer| %>
+
+
+<%= form_tag(customers_results_path, method: 'get', id: "search-form") do %>
+  <%= search_field_tag :query, params[:query], placeholder: "Search Customer" %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+
+
+   <% @customers.each do |customer| %>
      <p id="pro"> Customer:
      <%= link_to customer.first_name, customer_path(customer.id) %>
-     <%= link_to 'Edit', edit_customer_path(customer) %>
-     <%= link_to "Delete", customer_path(customer), :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+     <!-- <%= link_to 'Edit', edit_customer_path(customer) %>
+     <%= link_to "Delete", customer_path(customer), :method => 'delete', :data => { :confirm => 'Are you sure?' } %> -->
     </p>
    <% end %>
 </div>
