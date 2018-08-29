@@ -1,24 +1,67 @@
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(/assets/I_Just_Wanted.jpg) no-repeat;
+    background-size: cover;
+}
+
 body{
  max-width: 1000px;
 margin: 0 auto;
  background-color: darkgrey;
 font-family: 'Inconsolata', monospace;
-font-size: 26px;
+font-size: 23px;
 }
 
 div, .robi {
-  color: white!important;
+  // color: white!important;
+  color: black;
 }
 
 .nav a {
  color: white;
- margin:auto;
+margin:auto;
  margin-top: 20px;
  margin-bottom: 30px;
  // margin: 0px, 0px, 0px ,0px;
  font-size: 21px;
+}
 
-  }
+.navbar-nav {
+ margin: auto;
+ // background-color: rgba(0, 0, 0, 0.4);
+ color: red;
+}
+
+nav.bg-light {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar-nav {
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(247, 4, 4);
+}
+
+
+#query{
+  margin-top: 120px;
+}
+
  .container{
    color: white;
  }
@@ -30,16 +73,16 @@ div, .robi {
   border-radius: 1em;
 }
 #pro{
-  color: white;
+color: black;
 }
 #show{
-  color: white;
+ color: white;
 }
 .r{
-  color: white;
+ color: white;
 }
 .robic{
-  color: white;
+   color: white;
   margin: 0px 0px 0px 165px;
 }
 .click{
@@ -48,3 +91,13 @@ div, .robi {
   text-align: center;
   font-family: 'Secular One', sans-serif;
 }
+p {
+    margin-top: 25px;
+    margin-bottom: 1rem;
+}
+#welcome{
+  font-size: 120px;
+  color: yellow;
+}
+
+///////////////////////////////////////
