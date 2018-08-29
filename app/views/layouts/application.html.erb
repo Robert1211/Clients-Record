@@ -11,10 +11,12 @@
 
   <body>
 
-    <video playsinline autoplay muted loop poster="/assets/I_Just_Wanted.jpg" id="bgvid">
+  <%= video_tag(["I_Just_Wanted.webm", "I_Just_Wanted.mp4"], :id => 'bgvid', :playsinline => true, :autoplay => true, :muted => true, :loop => true, :poster => asset_path("I_Just_Wanted.jpg")) %>
+
+    <!--video playsinline autoplay muted loop poster="/assets/I_Just_Wanted.jpg" id="bgvid">
       <source src="/assets/I_Just_Wanted.webm" type="video/webm">
       <source src="/assets/I_Just_Wanted.mp4" type="video/mp4">
-    </video>
+    </video-->
       <!-- <a class="btn btn-primary" href="#" role="button">Link</a> -->
       <!-- <%= link_to 'Home', root_path, :class => 'btn btn-primary' %> -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
