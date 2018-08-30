@@ -10,6 +10,10 @@
   <h2>Address:    <%= @customer.address %></h2>
   <h2>Decsription: <%= @customer.description %></h2>
 
-<%= link_to 'Edit', edit_customer_path(@customer) %>
-<%= link_to 'Delete', customer_path(@customer), :method => 'delete', :data => { :confirm => 'Are you sure ?'} %>
-</div>
+<%= link_to 'Edit', edit_customer_path(@customer), :class => 'btn btn-primary' %>
+
+<%= button_to 'Delete', customer_path(@customer), :method => 'delete', :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-danger' %>
+
+
+<!-- <%= link_to 'Delete', customer_path(@customer), :method => 'delete', :data => { :confirm => 'Are you sure ?'} %>
+</div> -->
