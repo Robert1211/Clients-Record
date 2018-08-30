@@ -5,10 +5,13 @@
       <%= @customer.last_name %>
        </h1>
 
-  <h2>Emaile:    <%= @customer.email %></h2>
-  <h2>Phone:     <%= @customer.phone %></h2>
-  <h2>Address:    <%= @customer.address %></h2>
-  <h2>Decsription: <%= @customer.description %></h2>
+   <h2 class="testo">Emaile:</h2><h2> <%= @customer.email %></h2><br>
+
+
+  <h2 class="testo">Phone:</h2><h2> <%= @customer.phone %></h2><br>
+
+  <h2 class="testo">Address:</h2><h2> <%= @customer.address %></h2><br>
+  <h2 class="testo">Decsription:</h2><h2> <%= @customer.description %></h2><br>
 
 <%= link_to 'Edit', edit_customer_path(@customer), :class => 'btn btn-primary' %>
 
