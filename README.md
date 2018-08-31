@@ -2,25 +2,18 @@
 
 https://record-clients.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project  - "Clients Record" -  project was business application for keeping client records.
 
-Things you may want to cover:
+* Built in Ruby on Rails
 
-* Ruby version
+* Models, Views, Controllers (MVC) application.
 
-* System dependencies
+* User Login function
 
-* Configuration
+* Search using pgSearch
 
-* Database creation
+* Bootstrap CSS
 
-* Database initialization
+* Heroku - SERVER
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* PostgreSQL
