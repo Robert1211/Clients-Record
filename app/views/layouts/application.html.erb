@@ -2,68 +2,39 @@
 <html>
   <head>
     <title>RecordClients</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <%= csrf_meta_tags %>
+     <%= csp_meta_tag %>
+     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-
-  <%= video_tag(["I_Just_Wanted.webm", "I_Just_Wanted.mp4"], :id => 'bgvid', :playsinline => true, :autoplay => true, :muted => true, :loop => true, :poster => asset_path("I_Just_Wanted.jpg")) %>
-
-    <!--video playsinline autoplay muted loop poster="/assets/I_Just_Wanted.jpg" id="bgvid">
+    <%= video_tag(["I_Just_Wanted.webm", "I_Just_Wanted.mp4"], :id => 'bgvid', :playsinline => true, :autoplay => true, :muted => true, :loop => true, :poster => asset_path("I_Just_Wanted.jpg")) %>
+      <!--video playsinline autoplay muted loop poster="/assets/I_Just_Wanted.jpg" id="bgvid">
       <source src="/assets/I_Just_Wanted.webm" type="video/webm">
       <source src="/assets/I_Just_Wanted.mp4" type="video/mp4">
-    </video-->
+      </video-->
       <!-- <a class="btn btn-primary" href="#" role="button">Link</a> -->
       <!-- <%= link_to 'Home', root_path, :class => 'btn btn-primary' %> -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button"    data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <%= link_to 'Home', root_path, :class => 'nav-item nav-link' %>
-
-      <% if @current_user.present? %>
-
-      <%= link_to 'Current Customers', customers_path, :class => 'nav-item nav-link'  %>
-
-      <%= link_to 'Create new customer', new_customer_path, :class => 'nav-item nav-link' %>
-
-      <%= link_to 'Email addresses', users_path, :class => 'nav-item nav-link' if @current_user.admin? %>
-
-      <%= link_to "Sign out #{ @current_user.email }", login_path, :method => 'delete', :class => 'nav-item nav-link' %>
-
-      <% else %>
-
-      <%= link_to 'Sign up', new_user_path, :class => 'nav-item nav-link' %>
-
-      <%= link_to 'Sign in', login_path, :class => 'nav-item nav-link' %>
-    </div>
-  </div>
-  <% end %>
-</nav>
-
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button"    data-toggle="collapse"        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <%= link_to 'Home', root_path, :class => 'nav-item nav-link' %>
+          <% if @current_user.present? %>
+          <%= link_to 'Current Customers', customers_path, :class => 'nav-item nav-link'  %>
+          <%= link_to 'Create new customer', new_customer_path, :class => 'nav-item nav-link' %>
+          <%= link_to 'Email addresses', users_path, :class => 'nav-item nav-link' if @current_user.admin? %>
+          <%= link_to "Sign out #{ @current_user.email }", login_path, :method => 'delete', :class => 'nav-item nav-link' %>
+          <% else %>
+          <%= link_to 'Sign up', new_user_path, :class => 'nav-item nav-link' %>
+          <%= link_to 'Sign in', login_path, :class => 'nav-item nav-link' %>
+        </div>
+      </div>
+      <% end %>
+    </nav>
     <%= yield %>
-
     <div class="fixed-bottom text-center" id="footer">&copy; 2018 Robert Maculewicz</div>
   </body>
 </html>
-
-
-<!-- <nav class="nav">
-<%= link_to 'Home', root_path %>
-<% if @current_user.present? %>
-<%= link_to "Current Customers", customers_path %>
-<%= link_to 'Create new customer', new_customer_path %>
-<%= link_to 'Email addresses', users_path if @current_user.admin? %>
-<%= link_to "Sign out #{ @current_user.email }", login_path, :method => 'delete' %>
-<% else %>
-<%= link_to 'Sign up', new_user_path %>
-<%= link_to 'Sign in', login_path %>
-<% end %>
-</nav> -->
