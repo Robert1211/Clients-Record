@@ -1,17 +1,17 @@
 
-<div class="col-md-6 offset-md-4" id="pro">
+<div class="col-md-6 offset-md-4" id="customer-detail">
 
       <h1><%= @customer.first_name %>
       <%= @customer.last_name %>
        </h1>
 
-   <h2 class="testo">Emaile:</h2><h2> <%= @customer.email %></h2><br>
+   <h2 class="show-description">Emaile:</h2><h2> <%= @customer.email %></h2><br>
 
 
-  <h2 class="testo">Phone:</h2><h2> <%= @customer.phone %></h2><br>
+  <h2 class="show-description">Phone:</h2><h2> <%= @customer.phone %></h2><br>
 
-  <h2 class="testo">Address:</h2><h2> <%= @customer.address %></h2><br>
-  <h2 class="testo">Decsription:</h2><h2> <%= @customer.description %></h2><br>
+  <h2 class="show-description">Address:</h2><h2> <%= @customer.address %></h2><br>
+  <h2 class="show-description">Decsription:</h2><h2> <%= @customer.description %></h2><br>
 
 <%= link_to 'Edit', edit_customer_path(@customer), :class => 'btn btn-primary' %>
 

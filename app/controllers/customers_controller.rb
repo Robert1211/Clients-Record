@@ -29,7 +29,6 @@ class CustomersController < ApplicationController
     redirect_to customer_path
   end
 
-
   def new
     @customer = Customer.new
   end
@@ -46,14 +45,10 @@ class CustomersController < ApplicationController
     @current_user.customers << customer
     redirect_to customers_path
   end
-
-
-
-
+  
   def destroy
     customer = Customer.find params[:id]
     customer.destroy
     redirect_to customers_path
   end
-
 end

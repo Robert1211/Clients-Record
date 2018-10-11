@@ -1,53 +1,42 @@
 @import url("https://fonts.googleapis.com/css?family=Aldrich|PT+Mono|Sarpanch");
-
 @import url('https://fonts.googleapis.com/css?family=Acme|Bangers|Cabin+Sketch|Gloria+Hallelujah|Jua|Permanent+Marker|Special+Elite|Sriracha|Tauri');
 
 video#bgvid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(/assets/I_Just_Wanted.jpg) no-repeat;
-    background-size: cover;
-    opacity: 0.2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(/assets/I_Just_Wanted.jpg) no-repeat;
+  background-size: cover;
+  opacity: 0.2;
 }
 
 body{
- max-width: 1200px;
-margin: 0 auto;
- background-color: darkgrey;
- // font-family: 'Aldrich', sans-serif;
- font-family: 'Inconsolata', monospace;
-font-size: 23px;
-}
-
-div, .robi {
-   // color: white!important;
-  color: black;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: darkgrey;
+  font-family: 'Inconsolata', monospace;
+  font-size: 23px;
 }
 
 .nav a {
- color: white;
-margin:auto;
- margin-top: 20px;
- margin-bottom: 30px;
- // margin: 0px, 0px, 0px ,0px;
- font-size: 21px;
+  color: white;
+  margin:auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 21px;
 }
 
 .navbar-nav {
- margin: auto;
- // background-color: rgba(0, 0, 0, 0.4);
- // color: red;
-
+  margin: auto;
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
@@ -56,69 +45,62 @@ margin:auto;
 
 nav.bg-light {
   background-color: rgba(0, 0, 0, 0.5) !important;
-
 }
 
 .navbar-nav {
   justify-content: space-around;
   width: 100%;
-
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: rgb(247, 4, 4);
-
 }
-
 
 #query{
   margin-top: 30px;
 }
 
- .container{
-   color: white;
- }
-
 .login-box {
-  // background-color: white;
-  // color: black!important;
   padding: 1em;
   border-radius: 1em;
 }
-#pro{
-color: black;
-margin-top: 70px;
+
+#customer-detail{
+  color: black;
+  margin-top: 70px;
 }
+
 #full_name1 {
   margin-right: auto;
   font-size: 34px;
 }
+
 #show{
- color: white;
+  color: white;
 }
-.r{
- color: white;
-}
-.robic{
-   color: white;
-  margin: 0px 0px 0px 165px;
-}
+// .robic{
+//    color: white;
+//   margin: 0px 0px 0px 165px;
+// }
 .click{
   font-size: 60px;
   color: red;
   text-align: center;
   font-family: 'Secular One', sans-serif;
 }
+
 p {
-    margin-top: 25px;
-    margin-bottom: 1rem;
+  margin-top: 25px;
+  margin-bottom: 1rem;
 }
+
 #welcome{
   font-size: 90px;
   color: yellow;
-   margin-top: 45px;
+  margin-top: 45px;
   font-family: 'Sriracha', cursive;
 }
+
 #footer{
   color: red;
 }
@@ -134,6 +116,7 @@ p {
   font-size: 30px;
   display: inline-grid;
 }
+
 #icon img{
   width: 100px;
 }
@@ -141,25 +124,24 @@ p {
 form.button_to {
   display: inline-block;
 }
-a{
-  color: yellow;
-}
-.testo {
-  color: #4a0b0b;
 
+// a{
+//   color: pink;
+// }
+
+.show-description {
+  color: #4a0b0b;
 }
+
 h2 {
   display: inline;
+}
 
-}
 h1, .h1 {
-    font-size: 42px;
+  font-size: 42px;
 }
-#wel {
-  margin-top: 10px
-}
+
 #homepage {
   font-size: 25px;
   font-weight: bold;
 }
-///////////////////////////////////////
