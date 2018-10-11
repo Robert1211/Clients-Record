@@ -18,6 +18,6 @@ class Customer < ApplicationRecord
   pg_search_scope :search_for, against: %i(first_name last_name email phone address description)
 
   def full_name
-    "#{first_name} #{last_name}"
+   "#{first_name} #{last_name}"
   end
 end
